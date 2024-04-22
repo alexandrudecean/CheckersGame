@@ -1,0 +1,12 @@
+﻿<Window x:Class="Tema_2___map.Views.GameOverWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema_2___map.Views"
+        mc:Ignorable="d"
+        Title="GameOverWindow" Height="150" Width="300" Background="#FF303030" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock Text="{Binding GameOverMessage}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+    </Grid>
+</Window>

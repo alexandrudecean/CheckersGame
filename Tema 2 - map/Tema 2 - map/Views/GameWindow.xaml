@@ -1,0 +1,81 @@
+﻿<Window x:Class="Tema_2___map.Views.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:Tema_2___map.ViewModels"
+        mc:Ignorable="d"
+       Title="Checkers Game"
+        Background="#FF121212"
+        Height="700" Width="900" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+
+        <TextBlock Text="Turn: " VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10" FontSize="20">
+            <TextBlock.DataContext>
+                <viewModels:GameVM/>
+            </TextBlock.DataContext>
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground" Value="White"/>
+                    <!-- Culoarea implicită a textului -->
+                    <Style.Triggers>
+                        <!-- Schimbă culoarea textului în funcție de rândul de mutare -->
+                        <DataTrigger Binding="{Binding CurrentTurn}" Value="Red">
+                            <Setter Property="Foreground" Value="Red"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding CurrentTurn}" Value="Black">
+                            <Setter Property="Foreground" Value="White"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+
+
+        <!-- Container pentru a încadra conținutul -->
+        <Border Background="#FF121212" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid Width="490" Height="490">
+
+
+                <!-- Container pentru tabla de joc -->
+                <Border BorderBrush="Black" BorderThickness="5">
+                    <Border.Background>
+                        <ImageBrush ImageSource="D:/Facultate/MAP/Tema 2 - map/Tema 2 - map/Resources/Board.jpg" Stretch="UniformToFill"/>
+                    </Border.Background>
+
+                    <Border.DataContext>
+                        <viewModels:GameVM/>
+                    </Border.DataContext>
+
+                    <ItemsControl Name="grid" ItemsSource="{Binding GameBoard}" VerticalAlignment="Center" HorizontalAlignment="Center" Width="478" Height="478">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <ItemsControl ItemsSource="{Binding}">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Orientation="Horizontal"/>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding ClickCommand}" CommandParameter="{Binding SimplePiece}" Width="50" Height="50" Margin="5" BorderThickness="0">
+                                                <Image Source="{Binding SimplePiece.PieceImage}" Stretch="Fill"/>
+                                                <Button.Style>
+                                                    <Style TargetType="Button">
+                                                        <Setter Property="Background" Value="Transparent"/>
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

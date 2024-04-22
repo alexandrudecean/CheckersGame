@@ -1,0 +1,20 @@
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\bin\Debug\Tema 2 - map.exe.config
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\bin\Debug\Tema 2 - map.exe
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\bin\Debug\Tema 2 - map.pdb
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\Tema 2 - map.csproj.AssemblyReference.cache
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\MainWindow.g.cs
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\Views\GameWindow.g.cs
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\App.g.cs
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\Tema 2 - map_MarkupCompile.cache
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\Tema 2 - map_MarkupCompile.lref
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\MainWindow.baml
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\Views\GameWindow.baml
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\Tema 2 - map.g.resources
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\Tema_2___map.Properties.Resources.resources
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\Tema 2 - map.csproj.GenerateResource.cache
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\Tema 2 - map.csproj.CoreCompileInputs.cache
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\Tema 2 - map.exe
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\Tema 2 - map.pdb
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\Views\GameOverWindow.g.cs
+D:\Facultate\MAP\Tema 2 - map\Tema 2 - map\obj\Debug\Views\GameOverWindow.baml
